@@ -2,14 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define WindowWidth 600
-#define WindowLenght 400
+#include "coordinates.h"
+#define WindowXsize 600
+#define WindowYsize 400
 
-
-typedef struct{
-	int x;
-	int y;
-	}Coordonate;
 
 
 //functiile in c vor fi folosite pentru a genera coordonate catre fillRectangle din C#
@@ -29,9 +25,10 @@ void AfisareCoordonatePatrat(Coordonate NV,Coordonate NE, Coordonate SV, Coordon
 
 
 void GeneratorCoordonatePatrat(){
+	srand(time(NULL));
 	//patrat de 20x20 px
-	int LeftUpCorner_x = rand() % (WindowWidth - 21); 
-    int LeftUpCorner_y = rand() % (WindowLenght - 21); 
+	int LeftUpCorner_x = rand() % (WindowXsize - 21); 
+    int LeftUpCorner_y = rand() % (WindowYsize - 21); 
 
     if(LeftUpCorner_y <= 20){
 		LeftUpCorner_y = 21;}
@@ -49,19 +46,7 @@ void GeneratorCoordonatePatrat(){
 
 }
 
+void GeneratorCoordoanateCurbe(){
+	printf("Functia GeneratorCoordonateCurbe nu a fost implementaat inca.");
+	};
 
-
-int main(){
-
-	srand(time(NULL));
-
-
-
-
-
-	GeneratorCoordonatePatrat();
-
-
-
-	return 0; 
-	}

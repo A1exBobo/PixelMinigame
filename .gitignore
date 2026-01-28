@@ -5,7 +5,7 @@ build/
 mygame
 
 # Python virtual environment
-venv/
+.venv/
 
 # Temporary files
 *.log

@@ -11,3 +11,5 @@ mygame
 *.log
 *.tmp
 
+#other files 
+git-graph.txt

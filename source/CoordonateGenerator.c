@@ -71,8 +71,8 @@ Shape RandomWaves(size_t samples) {
         return s;
     }
 
-    double A = rand() % (WindowYsize - 20);
-    double w = 0.05;
+    double A = rand() % (WindowYsize - WindowYsize/2);
+    double w = 0.009;
     double e = 0;
     int rectification = WindowYsize / 2;
 

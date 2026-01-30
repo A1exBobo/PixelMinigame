@@ -3,7 +3,20 @@
 #include <time.h>
 #include "coordinates.h"
 
-
+void writeCoordinate(Shape s){
+	FILE* f = fopen("../data/coordinates.txt","w+");
+	if(f == NULL){
+			printf("Nu s-a putut deschide fisierul.");
+		}
+	
+	for (int i = 0; i < s.count; i++) {
+			printf("x = %d y = %d\n", s.points[i].x, s.points[i].y);
+			fprintf(f, "%d %d\n", s.points[i].x, s.points[i].y);
+				
+		}
+	
+	
+	}
 
 
 
@@ -13,26 +26,17 @@ int main(){
     srand(time(NULL));
 	
 	
-	FILE* fisier;
 	Shape NewSquare = Square(20); //latura = 20 px
+	writeCoordinate(NewSquare);
+	FreeShape(&NewSquare);
+
+	Shape NewWave2 = RandomWaves(580); //valuri de 120 puncte
+	writeCoordinate(NewWave2);
+	FreeShape(&NewWave2);
 	
-	
-	
-	fisier = fopen("Minigame/PyScripts/coordinates.txt","w+");
-	if(fisier == NULL){
-			printf("Nu s-a putut deschide fisierul.");
-			return 1;
-		}
-	
-	for (int i = 0; i < NewSquare.count; i++) {
-			printf("x = %d y = %d\n", NewSquare.points[i].x, NewSquare.points[i].y);
-			fprintf(fisier, "%d %d\n", NewSquare.points[i].x, NewSquare.points[i].y);
-				
-		}
 
 
 
-
-	FreeShape(&NewSquare);	
+		
 	return 0;
 	}

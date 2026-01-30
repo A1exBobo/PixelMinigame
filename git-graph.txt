@@ -1,0 +1,16 @@
+* b701347 (origin/main) Add git-graph.txt to .gitignore
+* 96d6b67 Add .venv to .gitignore for Python projects
+* fe822c7 Delete .venv directory
+*   d6cc4d5 Merge pull request #2 from A1exBobo/feature/coordonates-generating-functions
+|\  
+* \   3ada25c Merge pull request #1 from A1exBobo/feature/coordonates-generating-functions
+|\ \  
+| | | * 6d9b3b1 (HEAD -> feature/coordonates-generating-functions, origin/feature/coordonates-generating-functions) An adugat niste makefiles ca sa pot rula cod mai rapid.
+| | |/  
+| | * d644a29 Am reorganizat structural proiectul,am creat mai multe foldere,source-fisierele .c .h;data .txt .img ,am adugat .gitignore. De asemenea, am modificat CoordonateGenerator , care acum returneaza coordonate(nu void , ca inainte).
+| |/  
+| * baa7189 Am creat un header pentru coordonate.
+| * 5f146cb Am adugat CoordonateGenerator and CoordonateGenerator.c
+|/  
+* d6d8f7a (main) Initial commit
+* 0f3b938 (feature/coordinates-generating-functions) Am adugat un functia de generare a coordonatelor

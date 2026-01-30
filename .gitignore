@@ -5,9 +5,11 @@ build/
 mygame
 
 # Python virtual environment
-venv/
+.venv/
 
 # Temporary files
 *.log
 *.tmp
 
+#other files 
+git-graph.txt

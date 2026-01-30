@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include "coordinates.h"
+#include "../include/coordinates.h"
 #define WindowXsize 600
 #define WindowYsize 400
 
@@ -21,7 +21,7 @@ void FreeShape(Shape* s) {
 
 Shape Square(double size){
 	
-	//patrat de 20x20 px
+	
 	Shape s;
 	s.count = 4;
 	s.points = malloc(s.count * sizeof(Coordonate));
@@ -35,7 +35,7 @@ Shape Square(double size){
     s.count = 0;
     return s;
     
-    //freeShape here if i am allowed 
+    
 }
 
 	
@@ -57,7 +57,7 @@ Shape Square(double size){
     
     return s;
     
-     //freeShape here if i am allowed 
+     
 
 }
 
@@ -81,7 +81,8 @@ Shape RandomWaves(size_t samples) {
         s.points[t] = (Coordonate){ (int)t, (int)y };
     }
 
-    return s; //freeShape here if i am allowed 
+    return s; 
 }
+
 
 

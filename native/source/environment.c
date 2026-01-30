@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-#include "coordinates.h"
+#include "../include/coordinates.h"
 
 void writeCoordinate(Shape s){
-	FILE* f = fopen("../data/coordinates.txt","w+");
+	FILE* f = fopen("../../data/coordinates.txt","w+");
 	if(f == NULL){
 			printf("Nu s-a putut deschide fisierul.");
 		}

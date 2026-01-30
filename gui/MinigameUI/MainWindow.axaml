@@ -6,4 +6,6 @@
         x:Class="MinigameUI.MainWindow"
         Title="MinigameUI">
     Welcome to Avalonia!
+    Aceasta este fereastra de meniu.
+    are butoane de play, afiseaza max score si cam atat deocamdata.
 </Window>

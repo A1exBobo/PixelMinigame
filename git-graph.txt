@@ -1,4 +1,5 @@
-* b701347 (origin/main) Add git-graph.txt to .gitignore
+* 1a3e2c5 (origin/main) Enhance README with detailed project information
+* b701347 Add git-graph.txt to .gitignore
 * 96d6b67 Add .venv to .gitignore for Python projects
 * fe822c7 Delete .venv directory
 *   d6cc4d5 Merge pull request #2 from A1exBobo/feature/coordonates-generating-functions

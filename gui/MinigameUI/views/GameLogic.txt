@@ -1,0 +1,8 @@
+you open the window 
+you press start
+	cold use a startbutton.cs 
+the map is rendered 
+	use the functions made in c to render the map and teh player 
+your caracter is rendered 
+you move 
+use the functions for moveing
